@@ -12,7 +12,7 @@
   margin-bottom: 10px;
 }
 
-.TodoSection-title {
+.TodoArticle-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
@@ -22,18 +22,18 @@
 }
 
 
-.TodoSection-todo {
+.TodoItem-text {
   font-size: 14px;
   line-height: 1.2;
   color: #453C42;
 }
 
-.remainingTodo {
+.remainingTodoCount {
   font-size: 12px;
   color: #453C42;
 }
 
-.TodoSection {
+.TodoPage-section {
   margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@
   width: 72px;
 }
 
-.TodoArticle {
+.TodoPage-article {
   display: flex;
   align-items: baseline;
 }
@@ -71,7 +71,7 @@
   margin-left: 10px;
 }
 
-.Todo {
+.TodoItem {
   margin-bottom: 5px;
   display: flex;
   align-items: center;
