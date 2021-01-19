@@ -8,7 +8,8 @@ class UsersController < ApplicationController
   def create
     email = params[:email]
     password = params[:password]
-    user = User.create!(email: email, password: password)
+    name = params[:name]
+    user = User.create!(email: email, password: password, name: name)
     render plain: "User created successfully with id #{user.id}"
   end
 end
