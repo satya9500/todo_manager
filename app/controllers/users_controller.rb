@@ -12,4 +12,11 @@ class UsersController < ApplicationController
     user = User.create!(email: email, password: password, name: name)
     render plain: "User created successfully with id #{user.id}"
   end
+
+  def login
+    email = params[:email]
+    password = params[:password]
+    user = User.where(email: email, password: password)
+    render plain: user.length == 0 ? false : true
+  end
 end
