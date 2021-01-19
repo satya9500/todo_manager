@@ -1,0 +1,116 @@
+.TodoPage-main {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 32px auto;
+}
+
+.TodoPage-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #453C42;
+  margin-bottom: 10px;
+}
+
+.TodoSection-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #453C42;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+
+.TodoSection-todo {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #453C42;
+}
+
+.remainingTodo {
+  font-size: 12px;
+  color: #453C42;
+}
+
+.TodoSection {
+  margin-bottom: 20px;
+}
+
+.TodoPage-input {
+  display: flex;
+  align-items: stretch;
+  height: 32px;
+}
+
+.TodoInput {
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 10px;
+  align-items: center;
+  color: #BFB8CC;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+}
+
+.TodoAddBtn {
+  font-size: 14px;
+  background-color: #48BB78;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #FFFFFF;
+  width: 72px;
+}
+
+.TodoArticle {
+  display: flex;
+  align-items: baseline;
+}
+
+.TodoList {
+  margin-left: 10px;
+}
+
+.Todo {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+
+.TodoListLabel:hover .delete-icon{
+  display: inline;
+}
+
+.TodoListLabel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.TodoListLabel:hover {
+  background-color: #F1EDF7;
+}
+
+
+.TodoCheckbox {
+  margin-right: 7px;
+}
+
+.Todo-overdue {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #C53030;
+}
+
+.delete-icon {
+  margin-left: 8px;
+  height: 14px;
+  display: none;
+}
+
+.remainingTodoDate {
+  font-size: 12px;
+  color: #453C42;
+  margin-left: 5px;
+}

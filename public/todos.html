@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo-app.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <title>Todo Management App</title>
+</head>
+
+<body>
+  <main class="TodoPage-main">
+    <h1 class="TodoPage-title">My Todo-List</h1>
+
+    <article>
+
+      <section class="TodoSection TodoPage-input">
+        <input type="text" class="TodoInput" placeholder="What's next?" />
+        <input type="date" class="TodoInput" />
+        <button class="TodoAddBtn">Add</button>
+      </section>
+
+      <section class="TodoSection">
+
+        <article class="TodoArticle">
+          <h2 class="TodoSection-title">Due Today</h2>
+          <p class="remainingTodo">0/4</p>
+        </article>
+
+        <ul class="TodoList">
+
+          <li class="Todo">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoSection-todo">Submit Saas 201 project</p>
+              <p class="Todo-overdue">Overdue</p>
+              <a href="javascript:void(0)">
+                <img src="assets/images/icons/delete.png" class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+          <li class="Todo">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoSection-todo">Call accountant</p>
+              <a href="javascript:void(0)">
+                <img src="assets/images/icons/delete.png" class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="TodoSection">
+
+        <article class="TodoArticle">
+          <h2 class="TodoSection-title">Due Tomorrow</h2>
+          <p class="remainingTodo">0/1</p>
+        </article>
+
+        <ul class="TodoList">
+
+          <li class="Todo">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoSection-todo">Refill Groceries</p>
+              <a href="javascript:void(0)">
+                <img src="assets/images/icons/delete.png" class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+
+        <article class="TodoArticle">
+          <h2 class="TodoSection-title">Remaining</h2>
+          <p class="remainingTodo">0/2</p>
+        </article>
+
+        <ul class="TodoList">
+
+          <li class="Todo">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoSection-todo">Buy Milk</p>
+              <p class="remainingTodoDate">Jan 21</p>
+              <a href="javascript:void(0)">
+                <img src="assets/images/icons/delete.png" class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+          <li class="Todo">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoSection-todo">MS Interview</p>
+              <p class="remainingTodoDate">Jan 21</p>
+              <a href="javascript:void(0)">
+                <img src="assets/images/icons/delete.png" class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+</body>
+
+</html>
