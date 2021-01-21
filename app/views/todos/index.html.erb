@@ -5,7 +5,7 @@
       <form method="post" action="/todos" class="TodoPage-section TodoPage-input">
         <input type="text" class="TodoInput" name="todo_text" placeholder="What's next?" />
         <input type="date" class="TodoInput"name="due_date" />
-        <button class="TodoAddBtn">Add</button>
+        <button class="TodoAddBtn" type="submit">Add</button>
       </form>
       <%= render partial: "todo-section", locals: {
         section_title: "Overdue",
