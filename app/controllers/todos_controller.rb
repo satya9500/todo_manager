@@ -24,6 +24,6 @@ class TodosController < ApplicationController
     todo = Todo.find(id)
     todo.completed = completed
     todo.save!
-    render plain: "Todo status of #{id} is updated to #{completed}"
+    redirect_to todos_path
   end
 end
