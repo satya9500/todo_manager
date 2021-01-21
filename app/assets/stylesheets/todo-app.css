@@ -107,3 +107,7 @@
   color: rgb(102, 89, 123);
   margin-left: 8px;
 }
+
+.Cross-todo {
+  text-decoration: line-through;
+}
