@@ -19,7 +19,8 @@
           <%end%>
           <a href="javascript:void(0)">
             <%= form_with(url: "todos/#{todo.id}", method:"delete") do %>
-              <input type="image" class="delete-icon" src="/assets/delete.png">
+            <%= image_submit_tag("delete.png", class: "delete-icon", alt: "Delete") do %>
+            <%end%>
             <% end %>
           </a>
         </label>
