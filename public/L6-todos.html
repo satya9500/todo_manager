@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="todo-app.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <title>Todo Management App</title>
+</head>
+
+<body>
+  <main class="TodoPage-main">
+    <h1 class="TodoPage-title">My Todo-List</h1>
+
+    <article>
+
+      <section class="TodoPage-section TodoPage-input">
+        <input type="text" class="TodoInput" placeholder="What's next?" />
+        <input type="date" class="TodoInput" />
+        <button class="TodoAddBtn">Add</button>
+      </section>
+
+      <section class="TodoPage-section">
+
+        <article class="TodoPage-article">
+          <h2 class="TodoArticle-title">Due Today</h2>
+          <p class="remainingTodoCount">0/4</p>
+        </article>
+
+        <ul class="TodoList">
+
+          <li class="TodoItem">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoItem-text">Submit Saas 201 project</p>
+              <p class="Todo-overdue">Overdue</p>
+              <a href="javascript:void(0)">
+                <img
+                  src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+                  class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+          <li class="TodoItem">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoItem-text">Call accountant</p>
+              <a href="javascript:void(0)">
+                <img
+                  src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+                  class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="TodoPage-section">
+
+        <article class="TodoPage-article">
+          <h2 class="TodoArticle-title">Due Tomorrow</h2>
+          <p class="remainingTodoCount">0/1</p>
+        </article>
+
+        <ul class="TodoList">
+
+          <li class="TodoItem">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoItem-text">Refill Groceries</p>
+              <a href="javascript:void(0)">
+                <img
+                  src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+                  class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="TodoPage-section">
+
+        <article class="TodoPage-article">
+          <h2 class="TodoArticle-title">Remaining</h2>
+          <p class="remainingTodoCount">0/2</p>
+        </article>
+
+        <ul class="TodoList">
+
+          <li class="TodoItem">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoItem-text">Buy Milk</p>
+              <p class="remainingTodoDate">Jan 21</p>
+              <a href="javascript:void(0)">
+                <img
+                  src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+                  class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+          <li class="TodoItem">
+            <label class="TodoListLabel">
+              <input type="checkbox" class="TodoCheckbox" />
+              <p class="TodoItem-text">MS Interview</p>
+              <p class="remainingTodoDate">Jan 21</p>
+              <a href="javascript:void(0)">
+                <img
+                  src="https://icons-for-free.com/iconfiles/png/512/delete+remove+trash+trash+bin+trash+can+icon-1320073117929397588.png"
+                  class="delete-icon" />
+              </a>
+            </label>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+</body>
+
+</html>
