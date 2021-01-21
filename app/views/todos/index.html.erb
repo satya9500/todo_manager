@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="todo-app.css" />
-  <link rel="stylesheet" href="reset.css" />
-  <title>Todo Management App</title>
-</head>
-
-<body>
   <main class="TodoPage-main">
     <h1 class="TodoPage-title">My Todo-List</h1>
     <article>
@@ -19,100 +7,21 @@
         <input type="date" class="TodoInput" />
         <button class="TodoAddBtn">Add</button>
       </section>
-
-      <section class="TodoPage-section">
-
-        <article class="TodoPage-article">
-          <h2 class="TodoArticle-title">Due Today</h2>
-          <p class="remainingTodoCount">0/4</p>
-        </article>
-
-        <ul class="TodoList">
-
-          <li class="TodoItem">
-            <label class="TodoListLabel">
-              <input type="checkbox" class="TodoCheckbox" />
-              <p class="TodoItem-text">Submit Saas 201 project</p>
-              <p class="Todo-overdue">Overdue</p>
-              <a href="javascript:void(0)">
-                <img src="assets/images/icons/delete.png" class="delete-icon" />
-              </a>
-            </label>
-          </li>
-
-          <li class="TodoItem">
-            <label class="TodoListLabel">
-              <input type="checkbox" class="TodoCheckbox" />
-              <p class="TodoItem-text">Call accountant</p>
-              <a href="javascript:void(0)">
-                <img src="assets/images/icons/delete.png" class="delete-icon" />
-              </a>
-            </label>
-          </li>
-
-        </ul>
-
-      </section>
-
-      <section class="TodoPage-section">
-
-        <article class="TodoPage-article">
-          <h2 class="TodoArticle-title">Due Tomorrow</h2>
-          <p class="remainingTodoCount">0/1</p>
-        </article>
-
-        <ul class="TodoList">
-
-          <li class="TodoItem">
-            <label class="TodoListLabel">
-              <input type="checkbox" class="TodoCheckbox" />
-              <p class="TodoItem-text">Refill Groceries</p>
-              <a href="javascript:void(0)">
-                <img src="assets/images/icons/delete.png" class="delete-icon" />
-              </a>
-            </label>
-          </li>
-
-        </ul>
-      </section>
-
-      <section class="TodoPage-section">
-
-        <article class="TodoPage-article">
-          <h2 class="TodoArticle-title">Remaining</h2>
-          <p class="remainingTodoCount">0/2</p>
-        </article>
-
-        <ul class="TodoList">
-
-          <li class="TodoItem">
-            <label class="TodoListLabel">
-              <input type="checkbox" class="TodoCheckbox" />
-              <p class="TodoItem-text">Buy Milk</p>
-              <p class="remainingTodoDate">Jan 21</p>
-              <a href="javascript:void(0)">
-                <img src="assets/images/icons/delete.png" class="delete-icon" />
-              </a>
-            </label>
-          </li>
-
-          <li class="TodoItem">
-            <label class="TodoListLabel">
-              <input type="checkbox" class="TodoCheckbox" />
-              <p class="TodoItem-text">MS Interview</p>
-              <p class="remainingTodoDate">Jan 21</p>
-              <a href="javascript:void(0)">
-                <img src="assets/images/icons/delete.png" class="delete-icon" />
-              </a>
-            </label>
-          </li>
-
-        </ul>
-
-      </section>
+      <%= render partial: "todo-section", locals: {
+        section_title: "Overdue",
+        todos: Todo.overdue,
+        show_due_date: true
+      } %>
+      <%= render partial: "todo-section", locals: {
+        section_title: "Due Today",
+        todos: Todo.due_today,
+        show_due_date: false
+      } %>
+      <%= render partial: "todo-section", locals: {
+        section_title: "Due Later",
+        todos: Todo.due_later,
+        show_due_date: true
+      } %>
 
     </article>
   </main>
-</body>
-
-</html>
