@@ -22,7 +22,9 @@
             <p class="remainingTodoDate"> <%= todo.due_date.to_s(:short) %> </p>
           <%end%>
           <a href="javascript:void(0)">
-            <%= image_tag(asset_path("delete.png"), :class=>"delete-icon") %>
+            <%= form_with(url: "todos/#{todo.id}", method:"delete") do %>
+              <input type="image" class="delete-icon" src="/assets/delete.png">
+            <% end %>
           </a>
         </label>
       </li>
