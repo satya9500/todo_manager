@@ -7,20 +7,18 @@
 
   <ul class="TodoList">
     <% todos.each do |todo| %>
-      <%if show_completed_todos or !todo.completed%>
-          <li class="TodoItem">
-            <label class="TodoListLabel">
-              <input type="checkbox" <%= todo.completed ? "checked" : "" %> class="TodoCheckbox" />
-              <p class="TodoItem-text <%= todo.completed ? "Cross-todo": "" %>"> <%= todo.todo_text %> </p>
-              <% if show_due_date %>
-                <p class="remainingTodoDate"> <%= todo.due_date.to_s(:short) %> </p>
-              <%end%>
-              <a href="javascript:void(0)">
-                <%= image_tag(asset_path("delete.png"), :class=>"delete-icon") %>
-              </a>
-            </label>
-          </li>
-      <%end%>
+      <li class="TodoItem">
+        <label class="TodoListLabel">
+          <input type="checkbox" <%= todo.completed ? "checked" : "" %> class="TodoCheckbox" />
+          <p class="TodoItem-text <%= todo.completed ? "Cross-todo": "" %>"> <%= todo.todo_text %> </p>
+          <% if show_due_date %>
+            <p class="remainingTodoDate"> <%= todo.due_date.to_s(:short) %> </p>
+          <%end%>
+          <a href="javascript:void(0)">
+            <%= image_tag(asset_path("delete.png"), :class=>"delete-icon") %>
+          </a>
+        </label>
+      </li>
     <% end %>
   </ul>
 
