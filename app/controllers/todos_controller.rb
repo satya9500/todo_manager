@@ -7,7 +7,7 @@ class TodosController < ApplicationController
 
   def show
     id = params[:id]
-    render plain: current_user.todos.find(id).to_pleasant_string
+    render plain: current_user.todos.find(id)
   end
 
   def create

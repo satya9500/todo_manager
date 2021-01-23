@@ -6,7 +6,4 @@ class User < ApplicationRecord
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   has_many :todos
 
-  def pretty_print
-    "#{id}. Name:#{name} | Email: #{email}  |  Password: #{password}"
-  end
 end

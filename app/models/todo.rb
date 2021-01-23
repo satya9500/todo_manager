@@ -5,11 +5,6 @@ class Todo < ActiveRecord::Base
   validates :due_date, presence:true
   belongs_to :user
 
-  def to_pleasant_string
-    is_completed = completed ? "[X]" : "[ ]"
-    "#{id}. #{is_completed} #{todo_text} | #{due_date.to_s(:long)}"
-  end
-
   def self.overdue
     all.where("due_date < ? and (not completed)", Date.today)
   end
