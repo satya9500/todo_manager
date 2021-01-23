@@ -16,6 +16,7 @@ class UsersController < ApplicationController
       last_name: params[:last_name],
       password: params[:password]
       )
+    session[:current_user_id] = user.id
     redirect_to "/"
   end
 
